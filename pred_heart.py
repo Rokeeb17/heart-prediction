@@ -48,7 +48,7 @@ def main():
     predict = ''
 
     if st.button('Predict'):
-        predict = heart_prediction(age, anaemia, creatinine_phosphokinase, diabetes, ejection_fraction,	high_blood_pressure, platelets, serum_creatinine, serum_sodium,	sex, smoking, time)
+        predict = heart_prediction([age, anaemia, creatinine_phosphokinase, diabetes, ejection_fraction, high_blood_pressure, platelets, serum_creatinine, serum_sodium,	sex, smoking, time])
     st.success(predict)
 
 if __name__ == '__main__':
